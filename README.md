@@ -1,4 +1,4 @@
-# PT-Br
+### PT-Br
 # Download de Dados Sharepoint
 Script Python que faz downloads dos repósitórios salvos no sharepoint
 
@@ -76,7 +76,7 @@ Apenas a pasta 'teste_diretory1' será baixada.
 ```
 
 __________________________________________________________________________________________________________
-#EN-Us
+### EN-Us
 # Download Sharepoint Data
 Python script that downloads from repositories saved in sharepoint
 
