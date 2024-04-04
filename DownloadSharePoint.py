@@ -1,6 +1,7 @@
 import importlib.util
 import subprocess
 import sys
+import os
 
 def install(package):
     """Instala uma biblioteca via pip"""
@@ -15,6 +16,11 @@ for lib in libraries:
         print(f"A biblioteca '{lib}' não está instalada. Instalando...")
         install(lib)
         print(f"A biblioteca '{lib}' foi instalada com sucesso!")
+        
+if os.name == 'nt':
+    os.system('cls')  # Comando para limpar a tela no Windows
+else:
+    os.system('clear')  # Comando para limpar a tela em sistemas Unix-like
         
 from office365.sharepoint.client_context import ClientContext
 from office365.runtime.auth.client_credential import ClientCredential
