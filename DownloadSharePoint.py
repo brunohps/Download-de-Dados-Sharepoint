@@ -80,7 +80,7 @@ def download_files_from_folder(folder, output_folder):
 
     for subfolder in subfolders:
         subfolder_name = subfolder.properties["Name"]
-        tqdm.write("Entrando na subpasta:", subfolder_name)
+        tqdm.write("Entrando na subpasta: {}".format(subfolder_name))
         # Criar a pasta no diretório de saída
         os.makedirs(output_folder + "\\" + subfolder_name, exist_ok=True)
         # Recursivamente, baixar arquivos da subpasta
